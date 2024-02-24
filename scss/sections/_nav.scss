@@ -1,27 +1,43 @@
 // imagen de fondo del menu
-nav{
+nav {
     background-image: url(../pages/resources/portada.jpg);
     background-size: cover;
     width: 100vw;
-    height: 700px;
+    height: 600px;
     border: black 2px;
-    // menu y logo 
-    .container-fluid{
+
+    .container-fluid {
         background-color: white;
         color: #5e7279;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         list-style: none;
         padding: 10px;
+        display: flex;
+        justify-content: space-between; 
+
+        .navbar-brand {
+            width: 600px;
+            img {
+                width: 35%;
+                background-color: white;
+            }
+        }
+
+        .navbar-toggler {
+            order: 0;  
+        }
     }
-    .navbar-brand{
-       
-        // logo
-        img{
-            width: 35%;
-            background-color: white;
+
+    @media (max-width: 768px) {
+        .container-fluid {
+            flex-direction: column;  
+            align-items: center;  
+
+            .navbar-brand {
+                margin-bottom: 10px; 
+            }
         }
     }
 }
+
+
 

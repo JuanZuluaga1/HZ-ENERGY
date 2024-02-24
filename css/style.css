@@ -7,16 +7,25 @@ nav {
   background-image: url(../pages/resources/portada.jpg);
   background-size: cover;
   width: 100vw;
-  height: 700px;
+  height: 600px;
   border: black 2px; }
   nav .container-fluid {
     background-color: white;
     color: #5e7279;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     list-style: none;
-    padding: 10px; }
-  nav .navbar-brand img {
-    width: 35%;
-    background-color: white; }
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; }
+    nav .container-fluid .navbar-brand {
+      width: 600px; }
+      nav .container-fluid .navbar-brand img {
+        width: 35%;
+        background-color: white; }
+    nav .container-fluid .navbar-toggler {
+      order: 0; }
+  @media (max-width: 768px) {
+    nav .container-fluid {
+      flex-direction: column;
+      align-items: center; }
+      nav .container-fluid .navbar-brand {
+        margin-bottom: 10px; } }
