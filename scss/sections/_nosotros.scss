@@ -70,12 +70,18 @@
         }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 375px) {
+    .main-nosotros{
+        overflow-x: hidden;
     .article-nosotros-2{       
         ul{
             display: flex;
             flex-direction: column;
-            width: 100vw;
+            li{
+                p{
+                    width: 200px;
+                }
+            };
         }
     }
     .article-nosotros-3{
@@ -85,4 +91,5 @@
             
             }
         }
+    }
 }
