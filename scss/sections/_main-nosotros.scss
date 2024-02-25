@@ -1,0 +1,88 @@
+.main-nosotros{
+    font-family: "Open Sans", sans-serif;
+    width: 100vw;
+    section{
+        .article-nosotros{
+            background-color: rgba(250, 250, 235, 0.534);
+            padding: 45px;
+            text-align: justify; 
+            h2{
+                text-align: center;
+            }
+        }
+        .article-nosotros-2{
+            background-color: #fcf0edfb;
+            padding: 30px;
+            text-align: justify;
+            
+            ul{
+                list-style: none;
+                padding: 15px;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    width: 500px;
+                    padding: 30px;  
+                }
+            }
+        }
+        .article-nosotros-3{
+            background-color: rgba(250, 250, 235, 0.534);
+            padding: 30px;
+            h2{
+                text-align: center;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+                p{
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+// medias queries para pag nosotros
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .article-nosotros-3{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            
+            }
+        }
+    }
+@media (min-width: 425px) and (max-width: 767px) {
+    .article-nosotros-3{
+        ul{
+            display: flex;
+            flex-direction: column;
+            
+            }
+        }
+}
+
+@media (max-width: 424px) {
+    .article-nosotros-2{       
+        ul{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+        }
+    }
+    .article-nosotros-3{
+        ul{
+            display: flex;
+            flex-direction: column;
+            
+            }
+        }
+}
