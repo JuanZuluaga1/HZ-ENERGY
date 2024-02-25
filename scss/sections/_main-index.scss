@@ -1,0 +1,102 @@
+.main-index{
+    background-color: rgba(250, 250, 235, 0.534);
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    width: 100vw;
+    height: 900px;
+    padding: 30px;
+    border: black 2px;
+    .section-1{
+        font-family: "Open Sans", sans-serif;
+        margin: 20px;
+        h2{
+            color: #e04622;
+        }
+        h3{
+            color: #e04622;
+        }
+
+    }
+    .section-2{
+        font-family: "Open Sans", sans-serif;
+        padding: 20px;
+        margin: 15px 20px 90px 20px;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        article{
+            overflow: scroll;
+            width: 500px;
+            height: 300px;
+            margin: 50px;
+            h2{
+                color: #e04622;
+            }
+            h3{
+                color: #e04622;
+            }
+        }
+            ol{
+                li{
+                    list-style: square;
+                }
+            }
+
+    }
+}
+// medias queries para el main-index
+
+@media (min-width: 768px) and (max-width: 1270px) {
+    .section-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: scroll;
+        article{
+            overflow: scroll;
+            width: 500px;
+            height: 200px;
+            margin: 5px;
+        }
+            
+
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .main-index{
+        overflow: scroll;
+    .section-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: scroll;
+        article{
+            overflow: scroll;
+            width: 500px;
+            height: 200px;
+            margin: 5px;
+        }
+    }
+    }
+}
+    
+@media (max-width: 424px) {
+    .main-index{
+        overflow: scroll;
+    .section-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: scroll;
+        article{
+            overflow: scroll;
+            width: 500px;
+            height: 200px;
+            margin: 5px;
+        }
+    }
+    }
+
+}
