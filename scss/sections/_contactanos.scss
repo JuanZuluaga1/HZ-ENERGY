@@ -1,0 +1,67 @@
+.main-contactanos{
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(250, 250, 235, 0.534);
+    width: 100vw;
+    height: 600ppx;
+    .grid-contactanos{
+        padding: 10px;
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-areas: 
+            "article-contactanos-1 mapa"
+            ". horario"; 
+        .article-contactanos-1{
+            padding: 20px;
+            grid-area: article-contactanos-1;
+            h2{
+                padding: 15px;
+            }
+            .mensaje{
+                width: 350px;
+                height: 250px;
+            }
+        }
+        .article-contactanos-2{
+            padding: 30px;
+            .mapa{
+                grid-area: mapa;
+            }
+            .horario{
+                padding: 30px;
+                list-style: square;
+                li{
+                    padding: 5px;
+                }
+            }
+
+        }
+    }
+}
+// medias queries contactanos
+@media (min-width: 768px) and (max-width: 1070px){
+    .main-contactanos{
+        height: auto;
+        .grid-contactanos{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    .main-contactanos{
+        height: auto;
+        .grid-contactanos{
+            display: flex;
+            flex-wrap: wrap;
+            .article-contactanos-1{
+                .mensaje{
+                    width: 250px;
+                    height: 150px;
+                }
+            }
+            .mapa{
+                width: 250px;
+            }
+        }
+    }
+}
