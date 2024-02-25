@@ -265,6 +265,53 @@ nav {
         margin: 5px;
         width: 280px; } }
 
+.main-proyectos {
+  background-color: rgba(250, 250, 235, 0.534);
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  display: flex;
+  justify-content: center; }
+  .main-proyectos .grid {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; }
+    .main-proyectos .grid .article-proyectos {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px; }
+      .main-proyectos .grid .article-proyectos img {
+        max-width: 100%;
+        height: auto; }
+      .main-proyectos .grid .article-proyectos h2 {
+        padding: 15px;
+        font-size: 36px;
+        margin: 10px 0; }
+      .main-proyectos .grid .article-proyectos ul {
+        list-style: none;
+        padding: 0; }
+        .main-proyectos .grid .article-proyectos ul li {
+          list-style: none;
+          padding: 5px;
+          font-size: 20px; }
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .main-proyectos .grid {
+    display: flex;
+    flex-wrap: wrap; }
+    .main-proyectos .grid .article-proyectos {
+      border-radius: 1px; } }
+
+@media (max-width: 424px) {
+  .main-proyectos {
+    overflow-x: hidden; }
+    .main-proyectos .grid {
+      display: flex;
+      flex-wrap: wrap; }
+      .main-proyectos .grid .article-proyectos {
+        border-radius: 0.5px; } }
+
 footer {
   background-color: #f8f9fa;
   padding: 20px 0;
