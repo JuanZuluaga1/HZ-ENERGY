@@ -29,3 +29,57 @@ nav {
       align-items: center; }
       nav .container-fluid .navbar-brand {
         margin-bottom: 10px; } }
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  width: 100vw; }
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100vw; }
+  .contenedor .footer-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #495057;
+    padding: 10px; }
+  .contenedor .footer-links a:hover {
+    color: #007bff; }
+  .contenedor .contacto-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #495057;
+    padding: 10px; }
+  .contenedor .copyright {
+    text-align: center;
+    color: #495057;
+    padding: 20px; }
+    .contenedor .copyright p {
+      text-align: center;
+      margin: 20px; }
+
+@media (max-width: 1440px) {
+  .copyright {
+    text-align: center;
+    color: #495057;
+    padding: 20px; }
+    .copyright p {
+      text-align: center;
+      margin: 20px; } }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .contenedor .footer-links a {
+    display: flex;
+    flex-direction: column; } }
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .contenedor .footer-links a {
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 424px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column; } }
