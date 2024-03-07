@@ -42,11 +42,13 @@ nav {
   border: black 2px; }
   .main-index .section-1 {
     font-family: "Open Sans", sans-serif;
+    text-align: center;
     margin: 20px; }
-    .main-index .section-1 h2 {
+    .main-index .section-1 article h2 {
       color: #e04622; }
-    .main-index .section-1 h3 {
-      color: #e04622; }
+    .main-index .section-1 article p {
+      text-align: justify;
+      padding: 50px; }
   .main-index .section-2 {
     font-family: "Open Sans", sans-serif;
     padding: 20px;

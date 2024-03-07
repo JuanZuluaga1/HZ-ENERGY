@@ -8,12 +8,17 @@
     border: black 2px;
     .section-1{
         font-family: "Open Sans", sans-serif;
+        text-align: center;
         margin: 20px;
-        h2{
-            color: #e04622;
-        }
-        h3{
-            color: #e04622;
+        article{
+            
+            h2{
+                color: #e04622;
+            }
+            p{
+                text-align: justify;
+                padding: 50px;
+            }
         }
 
     }
