@@ -115,8 +115,10 @@ nav {
     text-align: justify; }
     .main-nosotros section .article-nosotros h2 {
       text-align: center; }
+    .main-nosotros section .article-nosotros p {
+      padding: 70px; }
   .main-nosotros section .article-nosotros-2 {
-    background-color: #fcf0edfb;
+    background-color: rgba(250, 250, 235, 0.534);
     padding: 30px;
     text-align: justify; }
     .main-nosotros section .article-nosotros-2 ul {
@@ -383,13 +385,16 @@ footer {
     font-size: 14px;
     color: #495057;
     padding: 10px; }
-  .contenedor .copyright {
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #495057;
+  padding: 20px; }
+  .copyright p {
     text-align: center;
-    color: #495057;
-    padding: 20px; }
-    .contenedor .copyright p {
-      text-align: center;
-      margin: 20px; }
+    margin: 20px; }
 
 @media (max-width: 1440px) {
   .copyright {

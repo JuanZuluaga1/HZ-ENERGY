@@ -24,7 +24,10 @@ footer {
         color: #495057;
         padding: 10px;
     }
-    .copyright {
+}
+.copyright {
+        display: flex;
+        justify-content: center;
         text-align: center;
         color: #495057;
         padding: 20px;
@@ -33,7 +36,6 @@ footer {
             margin: 20px;
         }
     }
-}
 
 // medias queries para el footer
 
