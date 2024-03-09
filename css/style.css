@@ -8,11 +8,10 @@ nav {
   background-image: url(../pages/resources/portada.jpg);
   background-size: cover;
   width: 100vw;
-  height: 600px;
+  height: 700px;
   border: black 2px; }
   nav .container-fluid {
-    background-color: white;
-    color: #5e7279;
+    background-color: rgba(255, 255, 255, 0.65);
     list-style: none;
     padding: 10px;
     display: flex;
@@ -20,8 +19,7 @@ nav {
     nav .container-fluid .navbar-brand {
       width: 600px; }
       nav .container-fluid .navbar-brand img {
-        width: 35%;
-        background-color: white; }
+        width: 60%; }
     nav .container-fluid .navbar-toggler {
       order: 0; }
   @media (max-width: 768px) {
@@ -37,7 +35,7 @@ nav {
   font-family: "Open Sans", sans-serif;
   font-size: large;
   width: 100vw;
-  height: 900px;
+  max-height: 95%;
   padding: 30px;
   border: black 2px; }
   .main-index .section-1 {
@@ -58,7 +56,6 @@ nav {
     flex-direction: row;
     justify-content: space-around; }
     .main-index .section-2 article {
-      overflow: scroll;
       width: 500px;
       height: 300px;
       margin: 50px; }

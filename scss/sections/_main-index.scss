@@ -3,7 +3,7 @@
     font-family: "Open Sans", sans-serif;
     font-size: large;
     width: 100vw;
-    height: 900px;
+    max-height: 95%;
     padding: 30px;
     border: black 2px;
     .section-1{
@@ -31,7 +31,6 @@
         flex-direction: row;
         justify-content: space-around;
         article{
-            overflow: scroll;
             width: 500px;
             height: 300px;
             margin: 50px;

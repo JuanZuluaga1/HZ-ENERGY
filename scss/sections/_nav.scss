@@ -3,12 +3,11 @@ nav {
     background-image: url(../pages/resources/portada.jpg);
     background-size: cover;
     width: 100vw;
-    height: 600px;
+    height: 700px;
     border: black 2px;
 
     .container-fluid {
-        background-color: white;
-        color: #5e7279;
+        background-color: rgba(255, 255, 255, 0.65);
         list-style: none;
         padding: 10px;
         display: flex;
@@ -17,8 +16,7 @@ nav {
         .navbar-brand {
             width: 600px;
             img {
-                width: 35%;
-                background-color: white;
+                width: 60%;
             }
         }
 
