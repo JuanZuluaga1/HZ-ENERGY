@@ -1,0 +1,6 @@
+@mixin fondo-destacado ($color-fondo, $colorf, $alineacion-texto) {
+    background-color: $color-fondo;
+    color: $colorf;
+    text-align: $alineacion-texto;
+    padding: 20px;
+}
