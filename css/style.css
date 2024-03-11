@@ -35,9 +35,7 @@ nav {
   font-family: "Open Sans", sans-serif;
   font-size: large;
   width: 100vw;
-  max-height: 95%;
-  padding: 30px;
-  border: black 2px; }
+  padding: 30px; }
   .main-index .section-1 {
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -51,7 +49,6 @@ nav {
     font-family: "Open Sans", sans-serif;
     padding: 20px;
     margin: 15px 20px 90px 20px;
-    height: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
@@ -67,20 +64,19 @@ nav {
       list-style: square; }
 
 @media (min-width: 768px) and (max-width: 1270px) {
-  .section-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: scroll; }
-    .section-2 article {
-      overflow: scroll;
-      width: 500px;
-      height: 200px;
-      margin: 5px; } }
+  .main-index {
+    max-height: none; }
+    .main-index .section-2 {
+      display: flex;
+      flex-direction: row;
+      box-sizing: border-box; } }
 
 @media (min-width: 425px) and (max-width: 767px) {
   .main-index {
-    overflow: scroll; }
+    overflow: scroll;
+    padding: 0; }
+    .main-index .section-1 {
+      margin: 5px; }
     .main-index .section-2 {
       display: flex;
       flex-direction: row;
@@ -94,7 +90,10 @@ nav {
 
 @media (max-width: 424px) {
   .main-index {
-    overflow: scroll; }
+    overflow: scroll;
+    padding: 0; }
+    .main-index .section-1 {
+      margin: 3px; }
     .main-index .section-2 {
       display: flex;
       flex-direction: row;
@@ -145,23 +144,39 @@ nav {
         font-weight: bolder; }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  .article-nosotros-3 ul {
+  .main-nosotros .article-nosotros-3 ul {
     display: flex;
     flex-wrap: wrap; } }
 
 @media (min-width: 425px) and (max-width: 767px) {
-  .article-nosotros-3 ul {
+  .main-nosotros .article-nosotros {
+    margin: 0;
+    padding: 10px !important; }
+    .main-nosotros .article-nosotros p {
+      margin: 0;
+      padding: 5px !important; }
+  .main-nosotros .article-nosotros-3 ul {
     display: flex;
     flex-direction: column; } }
 
 @media (max-width: 375px) {
   .main-nosotros {
     overflow-x: hidden; }
-    .main-nosotros .article-nosotros-2 ul {
-      display: flex;
-      flex-direction: column; }
-      .main-nosotros .article-nosotros-2 ul li p {
-        width: 200px; }
+    .main-nosotros .article-nosotros {
+      margin: 0;
+      padding: 10px !important; }
+      .main-nosotros .article-nosotros p {
+        margin: 0;
+        padding: 5px !important; }
+    .main-nosotros .article-nosotros-2 {
+      padding: 10px !important; }
+      .main-nosotros .article-nosotros-2 ul {
+        display: flex;
+        flex-direction: column; }
+        .main-nosotros .article-nosotros-2 ul li {
+          padding: 5px !important; }
+          .main-nosotros .article-nosotros-2 ul li p {
+            width: 200px; }
     .main-nosotros .article-nosotros-3 ul {
       display: flex;
       flex-direction: column; } }
@@ -227,50 +242,47 @@ nav {
 
 @media (min-width: 200px) and (max-width: 767px) {
   .main-servicios .article ul {
-    padding: 2px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 5px;
-    grid-template-areas: "representacion" "venta-energia" "produccion-energia" "proyectos" "aom" "consultoria"; }
+    padding: 5px !important;
+    display: flex;
+    flex-wrap: wrap; }
     .main-servicios .article ul .representacion {
-      grid-area: representacion;
-      padding: 5px; }
+      padding: 5px;
+      height: 300px; }
       .main-servicios .article ul .representacion h2 {
         text-align: center; }
       .main-servicios .article ul .representacion p {
         text-align: justify; }
     .main-servicios .article ul .venta-energia {
-      grid-area: venta-energia;
-      padding: 5px; }
+      padding: 5px;
+      height: 400px; }
       .main-servicios .article ul .venta-energia h2 {
         text-align: center; }
       .main-servicios .article ul .venta-energia p {
         text-align: justify; }
     .main-servicios .article ul .produccion-energia {
-      grid-area: produccion-energia;
-      padding: 5px; }
+      padding: 5px;
+      height: 350px; }
       .main-servicios .article ul .produccion-energia h2 {
         text-align: center; }
       .main-servicios .article ul .produccion-energia p {
         text-align: justify; }
     .main-servicios .article ul .proyectos {
-      grid-area: proyectos;
-      padding: 5px; }
+      padding: 5px;
+      height: 350px; }
       .main-servicios .article ul .proyectos h2 {
         text-align: center; }
       .main-servicios .article ul .proyectos p {
         text-align: justify; }
     .main-servicios .article ul .aom {
-      grid-area: aom;
-      padding: 5px; }
+      padding: 5px;
+      height: 350px; }
       .main-servicios .article ul .aom h2 {
         text-align: center; }
       .main-servicios .article ul .aom p {
         text-align: justify; }
     .main-servicios .article ul .consultoria {
-      grid-area: consultoria;
-      padding: 5px; }
+      padding: 5px;
+      height: 550px; }
       .main-servicios .article ul .consultoria h2 {
         text-align: center; }
       .main-servicios .article ul .consultoria p {

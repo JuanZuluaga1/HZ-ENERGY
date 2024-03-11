@@ -80,21 +80,12 @@
     .main-servicios{
         .article{
             ul{
-                padding: 2px;
-                display: grid; 
-                grid-template-columns: 1fr; 
-                grid-template-rows: repeat(6, 1fr); 
-                gap: 5px;
-                grid-template-areas: 
-                "representacion"
-                "venta-energia"
-                "produccion-energia"
-                "proyectos"
-                "aom"
-                "consultoria";   
+                padding: 5px !important;
+                display: flex;
+                flex-wrap: wrap;
                 .representacion { 
-                    grid-area: representacion;
                     padding: 5px;
+                    height: 300px;
                     h2{
                         text-align: center;
                     } 
@@ -103,8 +94,8 @@
                     }
                 }
                 .venta-energia { 
-                    grid-area: venta-energia; 
                     padding: 5px;
+                    height: 400px;
                     h2{
                         text-align: center;
                     } 
@@ -113,8 +104,8 @@
                     }
                 }
                 .produccion-energia { 
-                    grid-area: produccion-energia;
                     padding: 5px; 
+                    height: 350px;
                     h2{
                         text-align: center;
                     } 
@@ -123,8 +114,8 @@
                     }
                 }
                 .proyectos { 
-                    grid-area: proyectos; 
                     padding: 5px;
+                    height: 350px;
                     h2{
                         text-align: center;
                     } 
@@ -133,8 +124,8 @@
                     }
                 }
                 .aom { 
-                    grid-area: aom; 
                     padding: 5px;
+                    height: 350px;
                     h2{
                         text-align: center;
                     } 
@@ -143,8 +134,8 @@
                     }
                 }
                 .consultoria { 
-                    grid-area: consultoria; 
                     padding: 5px;
+                    height: 550px;
                     h2{
                         text-align: center;
                     } 
