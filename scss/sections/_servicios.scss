@@ -1,6 +1,8 @@
 .main-servicios{
     .article{
         background-color: rgba(250, 250, 235, 0.534);
+        display: flex;
+        align-items: center;
         ul{
             font-family: "Open Sans", sans-serif;
             list-style: none;
@@ -61,10 +63,15 @@
 // medias queries servicios
 @media (min-width: 768px) and (max-width: 1439px) {
     .article{
+        display: flex;
+        align-items: center;
         ul{
             @include medias-queries(85%);
             padding: 10px;
             width: auto;
+            li{
+                height: auto;
+            }
         }
     }
 }
@@ -73,17 +80,18 @@
     .main-servicios{
         .article{
             ul{
-                padding: 10px;
+                padding: 2px;
                 display: grid; 
                 grid-template-columns: 1fr; 
                 grid-template-rows: repeat(6, 1fr); 
+                gap: 5px;
                 grid-template-areas: 
                 "representacion"
                 "venta-energia"
                 "produccion-energia"
                 "proyectos"
                 "aom"
-                "consultoria";
+                "consultoria";   
                 .representacion { 
                     grid-area: representacion;
                     padding: 5px;

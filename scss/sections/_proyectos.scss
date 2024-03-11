@@ -5,11 +5,11 @@
     display: flex;
     justify-content: center;
     
-    .grid{  
-        // se agrega grid para cumplir con la entrega pero no es necesario, se puede resolver con flex  
+    .proye{  
         padding: 25px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
         grid-template-rows: auto;
         .article-proyectos{
             text-align: center;
@@ -42,7 +42,7 @@
 // es mejor pasar a flex ya que la informacion debe ser vertical
 @media (min-width: 425px) and (max-width: 767px) {
     .main-proyectos{
-        .grid{ 
+        .proye{ 
             display: flex;
             flex-wrap: wrap;
             .article-proyectos{
@@ -55,7 +55,7 @@
 @media (max-width: 424px) {
     .main-proyectos{
         overflow-x: hidden;
-        .grid{ 
+        .proye{ 
             display: flex;
             flex-wrap: wrap;
             .article-proyectos{
