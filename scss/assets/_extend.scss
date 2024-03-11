@@ -4,3 +4,9 @@
     max-width: $porcentaje;
     justify-content: center;
 }
+@mixin titulos ($posicion){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $posicion;
+    color: #e04622;
+}

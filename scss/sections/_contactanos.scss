@@ -13,7 +13,8 @@
         .article-contactanos-1{
             padding: 20px;
             grid-area: article-contactanos-1;
-            h2{
+            h1{
+                @include titulos (left);
                 padding: 15px;
             }
             .mensaje{

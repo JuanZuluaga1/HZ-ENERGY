@@ -112,8 +112,11 @@ nav {
     background-color: rgba(250, 250, 235, 0.534);
     padding: 45px;
     text-align: justify; }
-    .main-nosotros section .article-nosotros h2 {
-      text-align: center; }
+    .main-nosotros section .article-nosotros h1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: #e04622; }
     .main-nosotros section .article-nosotros p {
       padding: 70px; }
   .main-nosotros section .article-nosotros-2 {
@@ -132,7 +135,10 @@ nav {
     background-color: rgba(250, 250, 235, 0.534);
     padding: 30px; }
     .main-nosotros section .article-nosotros-3 h2 {
-      text-align: center; }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: #e04622; }
     .main-nosotros section .article-nosotros-3 ul {
       list-style: none;
       display: flex;
@@ -184,7 +190,10 @@ nav {
 .main-servicios .article {
   background-color: rgba(250, 250, 235, 0.534);
   display: flex;
+  flex-direction: column;
   align-items: center; }
+  .main-servicios .article h1 {
+    color: #e04622; }
   .main-servicios .article ul {
     font-family: "Open Sans", sans-serif;
     list-style: none;
@@ -293,7 +302,13 @@ nav {
   font-family: "Open Sans", sans-serif;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center; }
+  .main-proyectos h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #e04622; }
   .main-proyectos .proye {
     padding: 25px;
     display: grid;
@@ -349,7 +364,11 @@ nav {
     .main-contactanos .grid-contactanos .article-contactanos-1 {
       padding: 20px;
       grid-area: article-contactanos-1; }
-      .main-contactanos .grid-contactanos .article-contactanos-1 h2 {
+      .main-contactanos .grid-contactanos .article-contactanos-1 h1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        color: #e04622;
         padding: 15px; }
       .main-contactanos .grid-contactanos .article-contactanos-1 .mensaje {
         width: 350px;
