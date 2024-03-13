@@ -1,8 +1,9 @@
 // assets
+@import './assets/reset';
 @import './assets/extend';
+@import './assets/variables';
 
 // sections
-@import './assets/reset';
 @import './sections/nav';
 @import './sections/main-index';
 @import './sections/nosotros';

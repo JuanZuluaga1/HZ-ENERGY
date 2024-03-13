@@ -193,109 +193,38 @@ nav {
   flex-direction: column;
   align-items: center; }
   .main-servicios .article h1 {
-    color: #e04622; }
-  .main-servicios .article ul {
-    font-family: "Open Sans", sans-serif;
+    color: #e04622;
+    padding: 20px; }
+  .main-servicios .article .carousel-inner {
     list-style: none;
-    margin: 0;
-    padding: 15px;
-    max-height: 98%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "representacion venta-energia produccion-energia" "proyectos aom consultoria"; }
-    .main-servicios .article ul .representacion {
-      grid-area: representacion;
-      padding: 30px; }
-      .main-servicios .article ul .representacion p {
-        text-align: justify; }
-    .main-servicios .article ul .venta-energia {
-      grid-area: venta-energia;
-      padding: 30px; }
-      .main-servicios .article ul .venta-energia p {
-        text-align: justify; }
-    .main-servicios .article ul .produccion-energia {
-      grid-area: produccion-energia;
-      padding: 30px; }
-      .main-servicios .article ul .produccion-energia p {
-        text-align: justify; }
-    .main-servicios .article ul .proyectos {
-      grid-area: proyectos;
-      padding: 30px; }
-      .main-servicios .article ul .proyectos p {
-        text-align: justify; }
-    .main-servicios .article ul .aom {
-      grid-area: aom;
-      padding: 30px; }
-      .main-servicios .article ul .aom p {
-        text-align: justify; }
-    .main-servicios .article ul .consultoria {
-      grid-area: consultoria;
-      padding: 30px; }
-      .main-servicios .article ul .consultoria p {
-        text-align: justify; }
+    width: 600px;
+    height: 420px; }
+    .main-servicios .article .carousel-inner h2 {
+      text-align: center;
+      padding: 20px; }
+    .main-servicios .article .carousel-inner p {
+      text-align: justify; }
+  .main-servicios .article .carousel-control-prev {
+    z-index: 1;
+    top: 90%;
+    transform: translateY(-40%);
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.164);
+    border-color: black;
+    color: black; }
+  .main-servicios .article .carousel-control-next {
+    z-index: 1;
+    top: 90%;
+    transform: translateY(-40%);
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.164);
+    border-color: black;
+    color: black; }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .article {
-    display: flex;
-    align-items: center; }
-    .article ul {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 85%;
-      justify-content: center;
-      padding: 10px;
-      width: auto; }
-      .article ul li {
-        height: auto; } }
-
-@media (min-width: 200px) and (max-width: 767px) {
-  .main-servicios .article ul {
-    padding: 5px !important;
-    display: flex;
-    flex-wrap: wrap; }
-    .main-servicios .article ul .representacion {
-      padding: 5px;
-      height: 300px; }
-      .main-servicios .article ul .representacion h2 {
-        text-align: center; }
-      .main-servicios .article ul .representacion p {
-        text-align: justify; }
-    .main-servicios .article ul .venta-energia {
-      padding: 5px;
-      height: 400px; }
-      .main-servicios .article ul .venta-energia h2 {
-        text-align: center; }
-      .main-servicios .article ul .venta-energia p {
-        text-align: justify; }
-    .main-servicios .article ul .produccion-energia {
-      padding: 5px;
-      height: 350px; }
-      .main-servicios .article ul .produccion-energia h2 {
-        text-align: center; }
-      .main-servicios .article ul .produccion-energia p {
-        text-align: justify; }
-    .main-servicios .article ul .proyectos {
-      padding: 5px;
-      height: 350px; }
-      .main-servicios .article ul .proyectos h2 {
-        text-align: center; }
-      .main-servicios .article ul .proyectos p {
-        text-align: justify; }
-    .main-servicios .article ul .aom {
-      padding: 5px;
-      height: 350px; }
-      .main-servicios .article ul .aom h2 {
-        text-align: center; }
-      .main-servicios .article ul .aom p {
-        text-align: justify; }
-    .main-servicios .article ul .consultoria {
-      padding: 5px;
-      height: 550px; }
-      .main-servicios .article ul .consultoria h2 {
-        text-align: center; }
-      .main-servicios .article ul .consultoria p {
-        text-align: justify; } }
+@media (max-width: 660px) {
+  .main-servicios .article .carousel-inner {
+    width: 300px;
+    height: 650px; } }
 
 .main-proyectos {
   background-color: rgba(250, 250, 235, 0.534);
