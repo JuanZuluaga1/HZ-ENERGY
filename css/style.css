@@ -279,6 +279,7 @@ nav {
 @media (max-width: 424px) {
   .main-proyectos {
     overflow-x: hidden;
+    align-items: center;
     width: auto; }
     .main-proyectos .proye {
       padding: 5px;
