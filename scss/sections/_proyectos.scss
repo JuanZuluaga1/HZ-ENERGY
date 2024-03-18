@@ -59,11 +59,20 @@
 @media (max-width: 424px) {
     .main-proyectos{
         overflow-x: hidden;
+        width: auto;
         .proye{ 
+            padding: 5px;
             display: flex;
             flex-wrap: wrap;
+            width: 310px;
             .article-proyectos{
-                border-radius: 0.5px;
+                width: 310px;
+                padding: 5px;
+                .h2-2{
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    
+                }
             }
         }
     }
